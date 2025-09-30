@@ -43,12 +43,13 @@ Aus den Personas lassen sich direkte, maßgeschneiderte Marketing-Strategien abl
 📈 Stammkunden	Loyalität steigern	1 Hotelnacht gratis
 💎 Premium-Planer	VIP-Pflege & Maximierung	Kostenfreies Aufgabegepäck
 
+
 ### 🚀 Nutzung des Repositorys
 Dieses Repository enthält:
 
 traveltide_segmentation.ipynb: Das Google Colab Notebook mit dem vollständigen Python-Code.
 
-Projektbeschreibung_Kunden-Kompass.pdf: Der ausführliche schriftliche Projektbericht.
+Projekt_Report.pdf: Der ausführliche schriftliche Projektbericht.
 
 Praesentation_Kunden-Kompass.pdf: Die finale Management-Präsentation.
 
