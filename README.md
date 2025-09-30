@@ -28,29 +28,18 @@ Die Analyse basiert auf internen Produktionsdaten von TravelTide. Für die Segme
 Die Analyse hat vier klar voneinander abgrenzbare Kundengruppen identifiziert:
 
 ### Persona	Anteil	Kurzbeschreibung
-🤔 Die Schaufensterbummler	39,8%	Größte Gruppe; zeigt hohes Interesse, hat aber noch nie gebucht.
-✈️ Die effizienten Städtereisenden	36,4%	Die solide Basis der aktiven Kunden; buchen gezielt kurze Trips.
-📈 Die aufstrebenden Stammkunden	21,5%	Zeigen erste Loyalität und haben bereits mehrfach gebucht.
-💎 Die Premium-Familienplaner	2,3%	Kleinste, aber wertvollste Gruppe; geben sehr viel Geld für lange Reisen aus.
+  Die Schaufensterbummler	39,8%	Größte Gruppe; zeigt hohes Interesse, hat aber noch nie gebucht.
+  Die effizienten Städtereisenden	36,4%	Die solide Basis der aktiven Kunden; buchen gezielt kurze Trips.
+  Die aufstrebenden Stammkunden	21,5%	Zeigen erste Loyalität und haben bereits mehrfach gebucht.
+  Die Premium-Familienplaner	2,3%	Kleinste, aber wertvollste Gruppe; geben sehr viel Geld für lange Reisen aus.
 
 
 ### ✍️ Handlungsempfehlungen
-Aus den Personas lassen sich direkte, maßgeschneiderte Marketing-Strategien ableiten:
+  Aus den Personas lassen sich direkte, maßgeschneiderte Marketing-Strategien ableiten:
 
 ### Persona	Strategisches Ziel	Top-Vorteil (Perk)
-🤔 Schaufensterbummler	Aktivierung & Erstbuchung	Exklusive Rabatte
-✈️ Städtereisende	Bindung & Wiederholungskauf	Keine Stornogebühren
-📈 Stammkunden	Loyalität steigern	1 Hotelnacht gratis
-💎 Premium-Planer	VIP-Pflege & Maximierung	Kostenfreies Aufgabegepäck
+  Schaufensterbummler	Aktivierung & Erstbuchung	Exklusive Rabatte
+  Städtereisende	Bindung & Wiederholungskauf	Keine Stornogebühren
+  Stammkunden	Loyalität steigern	1 Hotelnacht gratis
+  Premium-Planer	VIP-Pflege & Maximierung	Kostenfreies Aufgabegepäck
 
-
-### 🚀 Nutzung des Repositorys
-Dieses Repository enthält:
-
-traveltide_segmentation.ipynb: Das Google Colab Notebook mit dem vollständigen Python-Code.
-
-Projekt_Report.pdf: Der ausführliche schriftliche Projektbericht.
-
-Praesentation_Kunden-Kompass.pdf: Die finale Management-Präsentation.
-
-traveltide_data.xlsx: Der anonymisierte Beispieldatensatz.
