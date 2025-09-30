@@ -1,0 +1,77 @@
+WITH
+-- Schritt 1: Finde alle Nutzer, die insgesamt mehr als 7 Sitzungen hatten
+PowerUsers AS (
+    SELECT
+        user_id
+    FROM
+        sessions
+    GROUP BY
+        user_id
+    HAVING
+        COUNT(session_id) > 7
+),
+
+RelevantSessions AS (
+    SELECT
+        session_id,
+        user_id,
+        trip_id,
+        page_clicks,
+        session_start,
+        session_end,
+        flight_discount,
+        hotel_discount,
+        cancellation
+    FROM
+        sessions
+    WHERE
+        session_start >= '2023-01-04'
+        AND user_id IN (SELECT user_id FROM PowerUsers)
+)
+
+-- Schritt 3: Verknüpfe alle Daten
+SELECT
+    -- 1. FEATURES ÜBER DIE USERS
+    u.user_id,
+    EXTRACT(YEAR FROM AGE(CURRENT_DATE, u.birthdate)) AS age,
+    u.gender,
+    u.married,
+    u.has_children,
+    u.home_country,
+    u.home_city,
+    u.home_airport,
+
+    -- 2. INFORMATIONEN AUS DEN SESSIONS
+    s.trip_id,
+    s.session_start,
+    s.session_end,
+    s.page_clicks,
+    s.flight_discount,
+    s.hotel_discount,
+    s.cancellation,
+    CASE
+        WHEN s.trip_id IS NOT NULL THEN 1
+        ELSE 0
+    END AS has_booked,
+
+    -- 3. INFORMATIONEN AUS DER FLIGHTS TABELLE
+    f.trip_airline,     
+    f.destination,
+    f.base_fare_usd,
+    f.checked_bags,      
+
+    -- 4. INFORMATIONEN AUS DER HOTELS TABELLE
+    h.hotel_name,        
+    h.nights,
+    h.hotel_per_room_usd
+
+FROM
+    RelevantSessions s
+JOIN
+    users u ON s.user_id = u.user_id
+LEFT JOIN
+    flights f ON s.trip_id = f.trip_id
+LEFT JOIN
+    hotels h ON s.trip_id = h.trip_id
+ORDER BY
+    s.user_id, s.session_start;
