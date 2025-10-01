@@ -36,7 +36,7 @@ Der Weg zur Erkenntnis folgte einem strukturierten, 5-stufigen Prozess:
 
 <br>
 
-## Handlungsempfehlungen
+## ✨ Handlungsempfehlungen
 
 Aus den Personas lassen sich direkte, maßgeschneiderte Marketing-Strategien für das neue Prämienprogramm ableiten:
 
